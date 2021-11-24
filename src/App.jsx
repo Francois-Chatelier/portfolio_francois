@@ -1,9 +1,10 @@
-import RemoveMe from './components/RemoveMe';
+import TitreSite from './components/accueil/TitreSite';
+import './app.css';
 
 function App() {
   return (
     <div className="App">
-      <RemoveMe />
+      <TitreSite />
     </div>
   );
 }

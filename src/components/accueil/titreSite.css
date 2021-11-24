@@ -1,0 +1,38 @@
+.firstname {
+  font-family: Staatliches, cursive;
+  color: #fb4264;
+  font-size: 3vw;
+}
+
+.lastname {
+  font-family: Staatliches, cursive;
+  color: #1d50f8;
+  font-size: 3vw;
+}
+
+.titre {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 600px) {
+  .firstname {
+    font-family: Staatliches, cursive;
+    color: #fb4264;
+    font-size: 5vw;
+  }
+
+  .lastname {
+    font-family: Staatliches, cursive;
+    font-size: 5vw;
+  }
+
+  .titre {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: auto;
+    padding-left: 20px;
+  }
+}
