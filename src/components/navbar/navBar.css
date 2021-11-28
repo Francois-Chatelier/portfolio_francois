@@ -9,17 +9,8 @@
   justify-content: space-around;
   align-items: center;
   height: 75px;
-  background: #2193b0; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to bottom,
-    #6dd5ed,
-    #2193b0
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to bottom,
-    #6dd5ed,
-    #2193b0
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: black;
+  border-bottom: solid wheat 1px;
 }
 
 .nav-links {
@@ -32,12 +23,21 @@
 .accueil,
 .portfolio,
 .apropos {
+  font-family: 'Abril Fatface', cursive;
   text-decoration: none;
-  color: white;
+  color: wheat;
   font-size: 20px;
   padding: 10px 20px;
   margin: 0 10px;
   cursor: pointer;
+}
+
+.accueil:hover,
+.portfolio:hover,
+.apropos:hover {
+  color: rgb(230, 137, 94);
+  transform: scale(1) translate(5px);
+  transition: 0.5s all ease-in-out;
 }
 
 .logo {
@@ -68,12 +68,14 @@
     top: 75px;
     transition: all 0.5s ease-out;
     width: 100%;
+    background: wheat;
   }
 
   .accueil,
   .portfolio,
   .apropos {
-    color: green;
+    font-family: 'Abril Fatface', cursive;
+    color: black;
     text-align: center;
     padding: 32px;
     width: 100%;
