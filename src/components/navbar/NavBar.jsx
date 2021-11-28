@@ -1,38 +1,39 @@
-import React, { useState, useEffect } from 'react';
+/* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
+/* eslint-disable jsx-a11y/click-events-have-key-events */
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import './navBar.css';
 
 const NavBar = () => {
-  const [toggleMenu, setToggleMenu] = useState(false);
-  const [largeur, setLargeur] = useState(window.innerWidth);
-
-  const toggleNavSmallScreen = () => {
-    setToggleMenu(!toggleMenu);
-  };
-
-  useEffect(() => {
-    const changeWidth = () => {
-      setLargeur(window.innerWidth);
-      if (window.innerWidth > 500) {
-        setToggleMenu(false);
-      }
-    };
-    window.addEventListener('resize', changeWidth);
-    return () => {
-      window.removeEventListener('resize', changeWidth);
-    };
-  }, []);
+  const [isMobile, setIsMobile] = useState(false);
 
   return (
-    <nav>
-      {(toggleMenu || largeur > 500) && (
-        <ul className="liste">
-          <li className="items">Accueil</li>
-          <li className="items">Portfolio</li>
-          <li className="items">A propos</li>
-        </ul>
-      )}
-      <button className="button" type="button" onClick={toggleNavSmallScreen}>
-        BTN
+    <nav className="navbar">
+      <h3 className="logo">LOGO</h3>
+      <ul
+        className={isMobile ? 'nav-links-mobile' : 'nav-links'}
+        onClick={() => setIsMobile(false)}
+      >
+        <Link to="/" className="accueil">
+          <li>Accueil</li>
+        </Link>
+        <Link to="/portfolio" className="portfolio">
+          <li>Portfolio</li>
+        </Link>
+        <Link to="/apropos" className="apropos">
+          <li>À propos</li>
+        </Link>
+      </ul>
+      <button
+        className="mobile-menu-icon"
+        type="button"
+        onClick={() => setIsMobile(!isMobile)}
+      >
+        {isMobile ? (
+          <i className="fas fa-times" />
+        ) : (
+          <i className="fas fa-bars" />
+        )}
       </button>
     </nav>
   );
