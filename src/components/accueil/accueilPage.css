@@ -1,0 +1,16 @@
+.mer {
+  width: 50%;
+  height: auto;
+  position: relative;
+}
+
+.photo {
+  display: flex;
+  justify-content: flex-end;
+}
+
+@media screen and (max-width: 1100px) {
+  .mer {
+    display: none;
+  }
+}
