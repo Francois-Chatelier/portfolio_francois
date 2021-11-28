@@ -1,10 +1,10 @@
-import TitreSite from './components/accueil/TitreSite';
 import './app.css';
+import NavBar from './components/navbar/NavBar';
 
 function App() {
   return (
     <div className="App">
-      <TitreSite />
+      <NavBar />
     </div>
   );
 }
