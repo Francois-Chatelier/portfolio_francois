@@ -16,12 +16,44 @@ const PageAccueil = () => {
             Développeur web Junior.
           </h3>
           <div className="react_node">
-            <i className="fab fa-react" />
-            <i className="fab fa-node" />
+            <i className="fab fa-react" alt="ReactJS" />
+            <i className="fab fa-node" alt="NodeJS" />
           </div>
-          <Link to="portfolio" className="btn">
-            Entrer
-          </Link>
+          <div className="entrer">
+            <Link to="portfolio" className="btn">
+              Entrer
+            </Link>
+          </div>
+          <div className="reseaux">
+            <a
+              href="https://www.linkedin.com/in/francois-chatelier/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <i className="fab fa-linkedin-in" />
+            </a>
+            <a
+              href="https://github.com/Francois-Chatelier"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <i className="fab fa-github" />
+            </a>
+            <a
+              href="https://www.facebook.com/francois.chatelier.08"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <i className="fab fa-facebook-f" />
+            </a>
+            <a
+              href="https://www.instagram.com/francois_chatelier/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <i className="fab fa-instagram" />
+            </a>
+          </div>
         </div>
         <img className="mer" src={mer} alt="Moi même à la mer" />
       </div>

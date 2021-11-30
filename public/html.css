@@ -1,6 +1,7 @@
 html {
   --scrollbarBG: none;
   --thumbBG: #f5dfb3;
+  overflow-x: hidden;
 }
 body::-webkit-scrollbar {
   width: 3px;
