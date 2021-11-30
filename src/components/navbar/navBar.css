@@ -10,8 +10,8 @@
   align-items: center;
   height: 75px;
   width: 100%;
-  background: black;
-  border-bottom: solid wheat 1px;
+  background-image: linear-gradient(180deg, #1e1e1c 1%, #000000 100%);
+  border-bottom: solid 1px rgb(0, 102, 255);
   position: fixed;
   z-index: 1;
 }
@@ -28,7 +28,7 @@
 .apropos {
   font-family: 'Abril Fatface', cursive;
   text-decoration: none;
-  color: wheat;
+  color: rgb(0, 102, 255);
   font-size: 20px;
   padding: 10px 20px;
   margin: 0 10px;
@@ -38,7 +38,7 @@
 .accueil:hover,
 .portfolio:hover,
 .apropos:hover {
-  color: rgb(230, 137, 94);
+  color: wheat;
   transform: scale(1) translate(5px);
   transition: 0.5s all ease-in-out;
 }
@@ -57,6 +57,9 @@
     position: absolute;
     top: 15px;
     left: 35px;
+  }
+  .navbar {
+    border-bottom: solid 1px rgb(0, 102, 255);
   }
 
   .nav-links {
