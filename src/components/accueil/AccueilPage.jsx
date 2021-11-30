@@ -1,5 +1,6 @@
 import React from 'react';
 import './accueilPage.css';
+import { Link } from 'react-router-dom';
 import NavBar from '../navbar/NavBar';
 import mer from '../images/mer.jpg';
 
@@ -18,6 +19,9 @@ const PageAccueil = () => {
             <i className="fab fa-react" />
             <i className="fab fa-node" />
           </div>
+          <Link to="portfolio" className="btn">
+            Entrer
+          </Link>
         </div>
         <img className="mer" src={mer} alt="Moi même à la mer" />
       </div>
