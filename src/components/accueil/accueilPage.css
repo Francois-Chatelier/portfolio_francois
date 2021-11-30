@@ -102,6 +102,32 @@ p {
   margin-top: 70px;
 }
 
+.fa-linkedin-in,
+.fa-facebook-f {
+  font-size: 18px;
+  color: wheat;
+}
+
+.fa-linkedin-in:hover,
+.fa-facebook-f:hover {
+  color: rgb(230, 137, 94);
+  transform: rotate(360deg);
+  transition: 0.5s ease;
+}
+
+.fa-github,
+.fa-instagram {
+  font-size: 18px;
+  color: rgb(230, 137, 94);
+}
+
+.fa-github:hover,
+.fa-instagram:hover {
+  color: wheat;
+  transform: rotate(-360deg);
+  transition: 0.5s ease;
+}
+
 @media screen and (max-width: 1100px) {
   .mer {
     display: none;
@@ -132,5 +158,20 @@ p {
     text-decoration: underline 1px;
     color: wheat;
     font-size: 22px;
+  }
+
+  .reseaux {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    margin-top: 70px;
+  }
+
+  .fa-linkedin-in,
+  .fa-facebook-f {
+    font-size: 18px;
+    color: wheat;
   }
 }
