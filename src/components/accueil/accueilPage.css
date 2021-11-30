@@ -75,6 +75,8 @@ p {
     color: wheat;
     font-size: 40px;
     padding-bottom: 60px;
+    margin-left: 10px;
+    text-align: center;
   }
 
   .grid-intro {
@@ -82,6 +84,6 @@ p {
     justify-content: center;
     width: 100%;
     margin: 0;
-    padding: 50px 10px 0 10px;
+    padding: 130px 10px 0 10px;
   }
 }

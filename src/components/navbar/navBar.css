@@ -9,8 +9,11 @@
   justify-content: space-around;
   align-items: center;
   height: 75px;
+  width: 100%;
   background: black;
   border-bottom: solid wheat 1px;
+  position: fixed;
+  z-index: 1;
 }
 
 .nav-links {
@@ -61,7 +64,7 @@
   }
 
   .nav-links-mobile {
-    position: absolute;
+    position: fixed;
     display: block;
     list-style: none;
     left: 0;
@@ -69,6 +72,7 @@
     transition: all 0.5s ease-out;
     width: 100%;
     background: wheat;
+    z-index: 1;
   }
 
   .accueil,
