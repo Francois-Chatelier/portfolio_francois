@@ -14,7 +14,10 @@ const PageAccueil = () => {
             Je suis <strong className="name">François Chatelier</strong>,
             Développeur web Junior.
           </h3>
-          <p>ReactJs & Express</p>
+          <div className="react_node">
+            <i className="fab fa-react" />
+            <i className="fab fa-node" />
+          </div>
         </div>
         <img className="mer" src={mer} alt="Moi même à la mer" />
       </div>
