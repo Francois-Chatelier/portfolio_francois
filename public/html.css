@@ -1,6 +1,6 @@
 html {
   --scrollbarBG: none;
-  --thumbBG: #f5dfb3;
+  --thumbBG: rgb(247, 219, 63);
   overflow-x: hidden;
 }
 body::-webkit-scrollbar {

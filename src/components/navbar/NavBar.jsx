@@ -1,18 +1,21 @@
-/* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
-/* eslint-disable jsx-a11y/click-events-have-key-events */
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './navBar.css';
+import logo from '../images/fc-logo.png';
 
 const NavBar = () => {
   const [isMobile, setIsMobile] = useState(false);
 
   return (
     <nav className="navbar">
-      <h3 className="logo">LOGO</h3>
+      <img
+        src={logo}
+        alt="Logo personnel François Chatelier"
+        className="logo"
+      />
       <ul
         className={isMobile ? 'nav-links-mobile' : 'nav-links'}
-        onClick={() => setIsMobile(false)}
+        onChange={() => setIsMobile(false)}
       >
         <Link to="/" className="accueil">
           <li>Accueil</li>
@@ -22,6 +25,9 @@ const NavBar = () => {
         </Link>
         <Link to="/a-propos" className="apropos">
           <li>À propos</li>
+        </Link>
+        <Link to="/contact" className="contact">
+          <li>Contact</li>
         </Link>
       </ul>
       <button

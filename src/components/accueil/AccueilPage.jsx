@@ -1,13 +1,11 @@
 import React from 'react';
 import './accueilPage.css';
 import { Link } from 'react-router-dom';
-import NavBar from '../navbar/NavBar';
 import mer from '../images/mer.jpg';
 
 const PageAccueil = () => {
   return (
     <div>
-      <NavBar />
       <div className="photo">
         <div className="grid-intro">
           <h1 className="intro">Bienvenue !</h1>
