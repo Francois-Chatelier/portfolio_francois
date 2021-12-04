@@ -23,10 +23,7 @@
   width: 75%;
 }
 
-.accueil,
-.portfolio,
-.apropos,
-.contact {
+.menu {
   font-family: 'Abril Fatface', cursive;
   text-decoration: none;
   color: rgb(247, 219, 63);
@@ -36,19 +33,16 @@
   cursor: pointer;
 }
 
-.accueil:hover,
-.portfolio:hover,
-.apropos:hover,
-.contact:hover {
+.menu:hover {
   color: #030e4b;
   transform: scale(1) translate(5px);
   transition: 0.5s all ease-in-out;
 }
 
 .logo {
-  width: 7%;
-  height: auto;
-  padding-top: 10px;
+  width: 25%;
+  padding-top: 6px;
+  margin-left: 40px;
 }
 
 .mobile-menu-icon {
@@ -76,9 +70,7 @@
     z-index: 1;
   }
 
-  .accueil,
-  .portfolio,
-  .apropos {
+  .menu {
     font-family: 'Abril Fatface', cursive;
     color: #030e4b;
     text-align: center;
@@ -95,13 +87,13 @@
     font-size: 30px;
     border: none;
     outline: none;
-    top: 15px;
+    top: 20px;
     right: 25px;
   }
 
   .logo {
-    width: 25%;
-    height: auto;
+    width: 45%;
+    padding-top: 6px;
     margin-left: 20px;
   }
 }

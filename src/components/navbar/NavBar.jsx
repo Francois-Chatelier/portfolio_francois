@@ -8,25 +8,27 @@ const NavBar = () => {
 
   return (
     <nav className="navbar">
-      <img
-        src={logo}
-        alt="Logo personnel François Chatelier"
-        className="logo"
-      />
+      <Link to="/" className="logo">
+        <img
+          src={logo}
+          alt="Logo personnel François Chatelier"
+          className="logo"
+        />
+      </Link>
       <ul
         className={isMobile ? 'nav-links-mobile' : 'nav-links'}
         onChange={() => setIsMobile(false)}
       >
-        <Link to="/" className="accueil">
+        <Link to="/" className="menu">
           <li>Accueil</li>
         </Link>
-        <Link to="/portfolio" className="portfolio">
+        <Link to="/portfolio" className="menu">
           <li>Portfolio</li>
         </Link>
-        <Link to="/a-propos" className="apropos">
+        <Link to="/a-propos" className="menu">
           <li>À propos</li>
         </Link>
-        <Link to="/contact" className="contact">
+        <Link to="/contact" className="menu">
           <li>Contact</li>
         </Link>
       </ul>
