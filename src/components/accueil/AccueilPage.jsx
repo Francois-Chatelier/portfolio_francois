@@ -5,7 +5,7 @@ import mer from '../images/mer.jpg';
 
 const PageAccueil = () => {
   return (
-    <div>
+    <div className="contenu">
       <div className="photo">
         <div className="grid-intro">
           <h1 className="intro">Bienvenue !</h1>

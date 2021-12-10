@@ -2,9 +2,19 @@
   font-family: Charlotte;
   src: url('../../Charlotte.otf');
 }
+@font-face {
+  font-family: Sunflower;
+  src: url('../../sunflower.otf');
+}
+
+.contenu {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
 
 .grid-intro {
-  color: rgb(247, 219, 63);
+  color: rgb(168, 255, 255);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -14,18 +24,17 @@
   margin-top: 80px;
   width: 100%;
   height: fit-content;
-  position: relative;
   line-height: 50px;
 }
 
 .name {
-  color: white;
+  color: rgb(247, 219, 63);
   font-family: Charlotte;
 }
 
 .intro {
-  font-family: 'Abril Fatface', cursive;
-  color: rgb(247, 219, 63);
+  font-family: Sunflower;
+  color: rgb(168, 255, 255);
   font-size: 60px;
   position: relative;
   padding-bottom: 100px;
@@ -33,19 +42,21 @@
 
 .presentation,
 p {
+  font-family: Sunflower;
   text-align: center;
   font-size: 2em;
 }
 
 .mer {
   width: 50%;
-  height: max-content;
-  position: relative;
+  height: auto;
 }
 
 .photo {
   display: flex;
   justify-content: space-between;
+  margin: 0;
+  padding: 0;
 }
 
 .react_node {
@@ -60,7 +71,7 @@ p {
 .fa-react,
 .fa-node {
   font-size: 40px;
-  color: white;
+  color: rgb(168, 255, 255);
 }
 
 .fa-react:hover,
@@ -82,38 +93,36 @@ p {
 }
 
 .btn {
-  font-family: 'Abril Fatface', cursive;
+  font-family: Sunflower;
   text-decoration: none;
-  color: rgb(247, 219, 63);
+  color: rgb(168, 255, 255);
   font-size: 25px;
   margin: 0 10px;
   cursor: pointer;
 }
 
 .btn:hover {
-  color: white;
+  color: rgb(247, 219, 63);
 }
-
-/***** Reseaux *****/
 
 .reseaux {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  width: 100%;
+  width: calc(70%);
   height: 40px;
-  margin-top: 70px;
+  margin-top: 45px;
 }
 
 .fa-linkedin-in,
 .fa-facebook-f {
   font-size: 18px;
-  color: rgb(247, 219, 63);
+  color: rgb(168, 255, 255);
 }
 
 .fa-linkedin-in:hover,
 .fa-facebook-f:hover {
-  color: white;
+  color: rgb(247, 219, 63);
   transform: rotate(360deg);
   transition: 0.5s ease;
 }
@@ -121,12 +130,12 @@ p {
 .fa-github,
 .fa-instagram {
   font-size: 18px;
-  color: white;
+  color: rgb(247, 219, 63);
 }
 
 .fa-github:hover,
 .fa-instagram:hover {
-  color: rgb(247, 219, 63);
+  color: rgb(168, 255, 255);
   transform: rotate(-360deg);
   transition: 0.5s ease;
 }
@@ -142,7 +151,7 @@ p {
   }
 
   .intro {
-    color: rgb(247, 219, 63);
+    color: rgb(168, 255, 255);
     font-size: 40px;
     padding-bottom: 60px;
     margin-left: 10px;
@@ -159,7 +168,7 @@ p {
 
   .btn {
     text-decoration: underline 1px;
-    color: rgb(247, 219, 63);
+    color: rgb(168, 255, 255);
     font-size: 22px;
   }
 
@@ -168,8 +177,7 @@ p {
     justify-content: space-around;
     align-items: center;
     width: 100%;
-    height: 40px;
-    margin-top: 70px;
+    height: 60px;
   }
 
   .fa-linkedin-in,

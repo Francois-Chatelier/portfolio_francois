@@ -101,7 +101,7 @@ const Apropos = () => {
               <p className="texte">
                 <strong className="bleu">
                   Autonomie, travail d&#39;équipe, créativité, documentation,
-                  organisation, écoute sont de rigueur.
+                  organisation, écoute, sont de rigueur.
                 </strong>
               </p>
             </span>

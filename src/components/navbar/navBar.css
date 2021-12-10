@@ -3,6 +3,11 @@
   src: url('../../Charlotte.otf');
 }
 
+@font-face {
+  font-family: Sunflower;
+  src: url('../../sunflower.otf');
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -15,10 +20,9 @@
   align-items: center;
   height: 75px;
   width: 100%;
-  background-color: #427496;
-  border-bottom: solid 1px rgb(247, 219, 63);
   position: fixed;
   z-index: 1;
+  background-color: #081e3d;
 }
 
 .nav-links {
@@ -29,9 +33,9 @@
 }
 
 .menu {
-  font-family: 'Abril Fatface', cursive;
+  font-family: Sunflower;
   text-decoration: none;
-  color: rgb(247, 219, 63);
+  color: rgb(168, 255, 255);
   font-size: 20px;
   padding: 10px 20px;
   margin: 0 10px;
@@ -39,7 +43,7 @@
 }
 
 .menu:hover {
-  color: #030e4b;
+  color: rgb(247, 219, 63);
   transform: scale(1) translate(5px);
   transition: 0.5s all ease-in-out;
 }
@@ -71,13 +75,14 @@
     top: 75px;
     transition: all 0.5s ease-out;
     width: 100%;
-    background: rgb(247, 219, 63);
+    background: #081e3d;
+    border-bottom: 1px solid #030e4b;
     z-index: 1;
   }
 
   .menu {
-    font-family: 'Abril Fatface', cursive;
-    color: #030e4b;
+    font-family: Sunflower;
+    color: rgb(168, 255, 255);
     text-align: center;
     padding: 32px;
     width: 100%;
@@ -88,7 +93,7 @@
     display: block;
     position: absolute;
     background: none;
-    color: #030e4b;
+    color: rgb(168, 255, 255);
     font-size: 30px;
     border: none;
     outline: none;
