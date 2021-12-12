@@ -1,7 +1,6 @@
 import React from 'react';
 import './apropos.css';
 import photoPro from '../images/Francois_Chatelier.jpg';
-import Carrousel from './Carrousel';
 
 const Apropos = () => {
   return (
@@ -111,7 +110,6 @@ const Apropos = () => {
           </div>
         </div>
       </div>
-      <Carrousel />
     </div>
   );
 };
