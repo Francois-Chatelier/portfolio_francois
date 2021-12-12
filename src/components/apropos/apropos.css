@@ -12,7 +12,6 @@
 .cards {
   display: flex;
   flex-direction: row;
-  height: max-content;
   text-align: center;
   margin: 0;
   padding: 0;
@@ -23,7 +22,7 @@
 }
 .portrait {
   max-width: 70%;
-  border-radius: 0 40px;
+  border-radius: 8px 40px;
   -webkit-box-shadow: 9px 6px 19px -2px rgba(8, 30, 61, 1);
   -moz-box-shadow: 9px 6px 19px -2px rgba(8, 30, 61, 1);
   box-shadow: 9px 6px 19px -2px rgba(8, 30, 61, 1);
@@ -70,27 +69,6 @@
   color: rgb(247, 219, 63);
 }
 
-/* Loisirs */
-.conteneur {
-  display: flex;
-  justify-content: space-around;
-  height: 200px;
-  margin-top: 10px;
-}
-.element {
-  height: 150px;
-  width: 150px;
-  margin: 10px;
-  background: chartreuse;
-  justify-content: center;
-  align-items: center;
-  clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
-}
-
-.retaille {
-  max-height: 100%;
-  max-width: 100%;
-}
 /* Responsive layout - makes a one column-layout instead of two-column layout */
 @media (max-width: 800px) {
   .cards {
@@ -109,12 +87,5 @@
   }
   .texte {
     font-size: 17px;
-  }
-  .conteneur {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    height: 200px;
-    margin-top: 3px;
   }
 }
