@@ -53,6 +53,7 @@ const PageAccueil = () => {
               <i className="fab fa-instagram" />
             </a>
           </div>
+          <span className="mail">francoisdevcode@gmail.com</span>
         </div>
         <img className="mer" src={mer} alt="Moi même à la mer" />
       </div>
