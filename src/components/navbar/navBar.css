@@ -1,0 +1,109 @@
+@font-face {
+  font-family: Charlotte;
+  src: url('../../Charlotte.otf');
+}
+
+@font-face {
+  font-family: Sunflower;
+  src: url('../../sunflower.otf');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 75px;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  background-color: #081e3d;
+}
+
+.nav-links {
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+  width: 75%;
+}
+
+.menu {
+  font-family: Sunflower;
+  text-decoration: none;
+  color: rgb(168, 255, 255);
+  font-size: 20px;
+  padding: 10px 20px;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.menu:hover {
+  color: rgb(247, 219, 63);
+  transform: scale(1) translate(5px);
+  transition: 0.5s all ease-in-out;
+}
+
+.logo {
+  width: 25%;
+  padding-top: 6px;
+  margin-left: 40px;
+}
+
+.mobile-menu-icon {
+  display: none;
+}
+
+@media screen and (max-width: 780px) {
+  .navbar {
+    border-bottom: solid 1px#030e4b;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .nav-links-mobile {
+    position: fixed;
+    display: block;
+    list-style: none;
+    left: 0;
+    top: 75px;
+    transition: all 0.5s ease-out;
+    width: 100%;
+    background: #081e3d;
+    border-bottom: 1px solid #030e4b;
+    z-index: 1;
+  }
+
+  .menu {
+    font-family: Sunflower;
+    color: rgb(168, 255, 255);
+    text-align: center;
+    padding: 32px;
+    width: 100%;
+    transition: all 0.5s ease;
+  }
+
+  .mobile-menu-icon {
+    display: block;
+    position: absolute;
+    background: none;
+    color: rgb(168, 255, 255);
+    font-size: 30px;
+    border: none;
+    outline: none;
+    top: 20px;
+    right: 25px;
+  }
+
+  .logo {
+    width: 45%;
+    padding-top: 6px;
+    margin-left: 20px;
+  }
+}
